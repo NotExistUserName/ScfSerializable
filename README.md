@@ -26,4 +26,10 @@
    
    -> New -> Plugin DevKit -> then enter your logic code
    
+2、If you finished your plugin logic code, then you can debug/run your plugin
+
+3、If you finished your debug/run, then you can click Build -> Prepare Plugin Moudle "your plugin name" for Deployment
+
+   -> install plugin is ok!
+   
    
