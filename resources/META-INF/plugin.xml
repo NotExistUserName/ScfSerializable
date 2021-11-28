@@ -1,0 +1,40 @@
+<idea-plugin>
+  <id>com.zhuanzhuan.id</id>
+  <name>ScfSerializable</name>
+  <version>1.0</version>
+  <vendor email="xiexing01@zhuanzhuan.com" url="https://www.zhuanzhuan.com/">转转精神科技有限公司</vendor>
+
+  <description><![CDATA[
+      There are a lot of repeated code to write.<br>
+      <em>This plugin will release your hands</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      This is the first version.<br>
+      <em>There will more</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="com.zhuanzhuan" class="com.zhuanzhuan.action.ScfSerializableAction" text="ScfSerializable"
+            description="auto generate scf serialization code">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt M"/>
+    </action>
+  </actions>
+
+</idea-plugin>
